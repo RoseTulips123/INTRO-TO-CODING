@@ -35,3 +35,26 @@ else:
     score = 0
     if anwser == "D":
         score = score + 3
+
+
+
+print("What is the best soda")
+print("A. Sprite")
+print("B. Coka Cola")
+print("C. Dr. Pepper")
+print("D. Squirt")
+
+anwser = input("Which one is best?")
+if anwser == "D":
+    print("I agree")
+else:
+    print("Wrong")
+                
+score = 0
+if anwser == "D":
+     score = score + 5
+
+
+                
+             
+                
