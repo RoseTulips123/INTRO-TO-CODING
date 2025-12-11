@@ -38,21 +38,36 @@ else:
 
 
 
-print("What is the best soda")
-print("A. Sprite")
+print("What is the best soda?")
+print("A. Squirt")
 print("B. Coka Cola")
 print("C. Dr. Pepper")
-print("D. Squirt")
+print("D. Sprite")
 
 anwser = input("Which one is best?")
-if anwser == "D":
+if anwser == "A":
+                    
     print("I agree")
 else:
     print("Wrong")
                 
 score = 0
-if anwser == "D":
+if anwser == "A":
      score = score + 5
+
+     print("What is the best time of year?")
+     print("A. Winter")
+     print("B. Summer")
+     print("C. Fall")
+     print("D. Spring")
+
+     anwser = input("Choose correctly")
+     if anwser == "B":
+         print("Well done.")
+
+score = 0
+if anwser == "B":
+    score = score + 10
 
 
                 
