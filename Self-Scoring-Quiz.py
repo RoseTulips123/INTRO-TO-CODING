@@ -13,7 +13,7 @@ else:
 
     score = 0
     if anwser == "C":
-        score = score + 1
+        score + 1
 
 
 
@@ -32,9 +32,11 @@ if anwser == "D":
 else:
     print("Wrong try again")
 
-    score = 0
+    score = score
     if anwser == "D":
-        score = score + 3
+        score + 3
+
+
 
 
 
@@ -51,23 +53,32 @@ if anwser == "A":
 else:
     print("Wrong")
                 
-score = 0
-if anwser == "A":
-     score = score + 5
+    score = score
+    if anwser == "A":
+        score + 5
 
-     print("What is the best time of year?")
-     print("A. Winter")
-     print("B. Summer")
-     print("C. Fall")
-     print("D. Spring")
 
-     anwser = input("Choose correctly")
-     if anwser == "B":
-         print("Well done.")
 
-score = 0
+     
+print("What is the best time of year?")
+print("A. Winter")
+print("B. Summer")
+print("C. Fall")
+print("D. Spring")
+
+anwser = input("Choose correctly")
 if anwser == "B":
-    score = score + 10
+ print("Well done.")
+
+else:
+    print("Womp womp, try again")
+
+    score = score
+    if anwser == "B":
+       score + 10
+
+
+
 
 print("Congrats! You have completed the quiz :)")
 print("Here is your score")
