@@ -69,6 +69,9 @@ score = 0
 if anwser == "B":
     score = score + 10
 
+print("Congrats! You have completed the quiz :)")
+print("Here is your score")
+print(score)
 
                 
              
