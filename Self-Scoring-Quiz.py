@@ -1,3 +1,5 @@
+score = 0
+
 print("What is the color of the sea?")
 print("A. Red")
 print("B. Yellow")
@@ -7,19 +9,14 @@ print("D. None of the above")
 anwser = input("Choose A, B, C, or D: ")
 if anwser == "C":
     print("Correct!")
-else: 
-    print("Wrong try again")
+    score += 1
     
+else: 
+    print("Incorrect.")
+    score -= 1
+       
 
-    score = 0
-    if anwser == "C":
-        score + 1
 
-
-
-             
-
-        
 print("What is the best chocolate? (2 extra points for right anwser)")
 print("A. Reeses")
 print("B. Milky way")
@@ -28,16 +25,12 @@ print("D. Dove")
 
 anwser = input("Choose wisely")
 if anwser == "D":
+    score += 2
     print("Very good")
+
 else:
-    print("Wrong try again")
-
-    score = score
-    if anwser == "D":
-        score + 3
-
-
-
+    print("Wrong")
+    score -= 1
 
 
 print("What is the best soda?")
@@ -48,19 +41,15 @@ print("D. Sprite")
 
 anwser = input("Which one is best?")
 if anwser == "A":
-                    
+    score += 1
     print("I agree")
+    
 else:
-    print("Wrong")
-                
-    score = score
-    if anwser == "A":
-        score + 5
+    score -= 1
+    print("wrong")
+         
 
-
-
-     
-print("What is the best time of year?")
+print("What is the best time of year?(10 extra points for right anwser)")
 print("A. Winter")
 print("B. Summer")
 print("C. Fall")
@@ -68,16 +57,13 @@ print("D. Spring")
 
 anwser = input("Choose correctly")
 if anwser == "B":
+ score += 10
  print("Well done.")
+ 
 
 else:
-    print("Womp womp, try again")
-
-    score = score
-    if anwser == "B":
-       score + 10
-
-
+    score -= 1
+    print("Womp womp")
 
 
 print("Congrats! You have completed the quiz :)")
