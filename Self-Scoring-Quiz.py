@@ -9,11 +9,11 @@ print("D. None of the above")
 anwser = input("Choose A, B, C, or D: ")
 if anwser == "C":
     print("Correct!")
-    score += 1
-    
+    score = score + 1
+     
 else: 
     print("Incorrect.")
-    score -= 1
+    score = score - 1
        
 
 
@@ -25,13 +25,12 @@ print("D. Dove")
 
 anwser = input("Choose wisely")
 if anwser == "D":
-    score += 2
     print("Very good")
+    score = score + 2
 
 else:
     print("Wrong")
-    score -= 1
-
+    score = score - 1
 
 print("What is the best soda?")
 print("A. Squirt")
@@ -41,12 +40,12 @@ print("D. Sprite")
 
 anwser = input("Which one is best?")
 if anwser == "A":
-    score += 1
     print("I agree")
+    score = score + 1
     
 else:
-    score -= 1
     print("wrong")
+    score = score - 1
          
 
 print("What is the best time of year?(10 extra points for right anwser)")
@@ -57,13 +56,12 @@ print("D. Spring")
 
 anwser = input("Choose correctly")
 if anwser == "B":
- score += 10
  print("Well done.")
- 
+ score = score + 10
 
 else:
-    score -= 1
     print("Womp womp")
+    score = score - 1
 
 
 print("Congrats! You have completed the quiz :)")
