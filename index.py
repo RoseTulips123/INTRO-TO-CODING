@@ -133,6 +133,8 @@
 # 1. South (Treasure of Spring)
 # 2. West  (Treasure of Summer)
 
+# Continue the adventure...
+
 
 
 
