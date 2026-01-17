@@ -82,7 +82,7 @@
 # luckily you packed extra supplies for your journey, you carefully bandage the fox's wounds and give it some water, after a few minutes the fox
 # gets up and  hands you what it looks like a small map, the fox then runs off into the forest, you look at the map and see that it shows an "x"
 # marking to a spot deeper in the forest, you decide to follow the map, after a few hours of searching you reach the spot marked on the map, you finnaly
-# find the spot, you start digging and find a chest buried in the ground, you open the chest and find gold, jewels, a cape, and a red gemstone!
+# find the spot, you start digging and find a chest buried in the ground, you open the chest and find gold, jewels, a cape, and a yellow gemstone!
 
 # Congratulations! You have found the Treasure of Autumn! What direction would you like to go to next?
 
@@ -133,7 +133,122 @@
 # 1. South (Treasure of Spring)
 # 2. West  (Treasure of Summer)
 
-# Continue the adventure...
+# (User picks south)
+# You set sail to the South!
+
+# You decide that your next adventure will be the southern island, located directly south of your home, after a few days of sailing you reach the island,
+# you dock you ship and step onto the beautiful, sandy beach, you see palm trees swaying in the warm breeze, beatiful lush greenery and exotic plants 
+#and animals you've never seen before, its like a paradise, you explore the beautiful lush island, and you manage to build an temporary shelter of 
+# palm leaves and wood. As night creeps over the island, you go to sleep, but you are then woken up by weird loud noises outside your shelter, do you 
+# investigate the noises, or stay in your shelter?
+
+# 1. Investigate the noises
+# 2. Stay in the shelter
+
+# (User picks 1)
+# Curiousity gets the better of you and you decide to investigate the noises, you muster up the courage and step outside your shelter, as you do,
+# you are greeted by an unwelcomed guest of black tall creatures with glowing purple eyes, you are stuck in a trance-like state, unable to move,
+# you can only watch as the the figures purple eyes get bigger and bigger, getting closer and closer, until you cant see no more.
+
+# you have failed your quest. (Loop back to building the shelter)
+
+# (User picks 2)
+# You decide to stay in your shelter, hoping the noises will go away, they eventually get farther away, until they are gone you cautiously look outside 
+# your shelter, you see nothing but the night and stars, you go back to sleep, and awake to a beautiful sunny morning, you decide to explore more of the
+# island, as you walk deeper into the island, you name some of the exotic plants and animals, and jot them down in your journal, after a few hours of
+# exploring you reach a beautiful waterfall, and the stream flowing from it, you drink some out of the stream and feel refreshed, you see a cave entrance
+# behind the waterfall, do you enter the cave or rest by the waterfall?
+
+# 1. Enter the cave
+# 2. Rest by the waterfall
+
+# (User picks 1)
+# You are have heard stories of hidden treasures in caves behind waterfalls, so you decide to enter the cave, as you step inside bats fly past you,
+# the cave is dark and damp, you walk deeper into the cave, after a few minutes you reach a large chamber with walls covered in colorful, glowing crystals,
+# in the center you see a large glowing crystal with a treasure map inside it, you brought some tools with you for your journey, witch tool should
+# you use to break the crystal?
+
+# 1. Hammer
+# 2. Chisel
+# 3. Pickaxe
+
+# (User picks 1)
+# You use the hammer to try and break the crystal, you strike it with all your might, the crystal shatters into a million pieces, the shards fly everywhere,
+# one sharp shard stabs you in the chest, you fall to the ground, helpless, as you die of loss of blood.
+
+# you have failed your quest. (Loop back to entering the cave)
+
+# (User picks 2)
+# You carefully use the chisel to break the crystal, after a few hours of careful work, you manage to break the crystal without damaging the map inside,
+# you unroll the map and see that it shows different landmarks on the island, with one landmark with an "x" marking, near the center of the island, you
+# follow the map, after an hour of walking, you reach the spot marked on the map, when you get to the place, you see an entrance of an underground tunnel,
+# you enter the tunnel, and find what it looks like a maze! You navigate through the maze using the direction on the back of the map, you
+# eventually reach a room at the end of the maze, with three paths leading towards the left, right, and middle, which path do you take?
+
+# 1. Left path
+# 2. Middle path
+# 3. Right path
+
+# (User picks 1)
+# You take the left path, after a few minutes of walking you reach a dead end, as you turn around to go back, you trigger a hidden trap, the floor
+# opens beneath you, and you fall into a pit of spikes.
+
+# you have failed your quest. (Loop back to entering the tunnel)
+
+# (User picks 2)
+# You take the middle path, as it seems most convincing, you walk for a few minutes and at the end of the path you see a lever on the wall, do
+# you pull the lever or go back?
+
+# 1. Pull the lever
+# 2. Go back
+
+# (User picks 1)
+# You pull the lever, you hear a rumbling sound, the ceiling opens up then a large anvil falls from above, crushing you instantly.
+
+# you have failed your quest. (Loop back to entering the underground tunnel)
+
+# (User picks 2)
+# You decide to go back to the room with the three paths, which path do you take now?
+
+# 1. Left path
+# 2. Right path
+
+# (User picks 1)
+# (Left path ending)
+
+# (User picks 2)
+# You take the right path, the tunnel is long and narrow, after awhile, you hear echos of flowing water ahead, you walk faster and soon reach a
+# large underground waterfall, with a sparkling pool below, you see a chest at the base of the waterfall, you swim to the chest and open it,
+# inside you find gold, jewels, armor, and a pink gemstone!
+
+# Congratulations! You have found the Treasure of Spring!
+
+# (User picks 3. Pickaxe)
+# You use the pickaxe to try and break the crystal, you strike it a little too hard, the crystal breaks in half, and so does the map inside,
+# you are left with nothing but shattered glass and torn paper.
+
+# you have failed your quest. (Loop back to entering the cave)
+
+# Would you like to continue to the Treasure of Summer? 
+
+# 1. Yes
+# 2. No (End Game)
+
+# (User picks 1)
+# You set sail to the West!
+
+# You decide that your final adventure will be the western island (Or whatever the user ends on), located directly west of your home, after a few days
+# of sailing you reach the island, you dock you ship and step onto the sandy desert, you see nothing but sand dunes and cacti as far as the eye can see,
+# the sun is blazing hot, you feel thirsty by just looking at the dry desert, you  
+
+
+
+
+
+
+
+
+
 
 
 
