@@ -1,0 +1,11 @@
+print("You are a treasure hunter who is on a quest to find hidden treasures left" "\n"
+"by four ancient kings, its been hidden for centeries and no one has been able to" "\n"
+"find it, but you wont give up! The only clue the ancient kings left behind was" "\n"
+"a stone tablet with different symbols on it, you remember seeing these symbols" "\n"
+"on your grand mothers vase that she never let you touch. One day, while she was" "\n" 
+"out getting groceries to make cookies, you decided to climb on top of the counter" "\n"
+"to get the vase down, you grabbed the vase and carefully climb down, you inpect"" \n"
+"the vase and the four symbols on it, you look closer at the small writing underneath" "\n"
+"each symbol, they read: North (Treasure of Winter),East(Treasure of autumn)," "\n"
+"South(Treasure of spring) and west (treasure of summer), these are directions!" "\n"
+"You put the vase back then decide to set out on your quest to find the hidden treasures") 

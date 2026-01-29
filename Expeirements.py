@@ -1,17 +1,8 @@
-import turtle
-import colorsys
-t = turtle.Turtle()
-s = turtle.Screen().bgcolor('black')
-t.speed(0)
-n = 70
-h = 0
-for i in range(360):
-    c = colorsys.hsv_to_rgb(h, 1, 0.8)
-    h+= 1/n
-    t.color(c)
-    t.left(1)
-    t.fd(1)
-    for j in range(2):
-        t.left(2)
-        t.circle(100)
+print("after days of sailing you reach an island directly North of your home, you dock your ship, " \
+"cold, arctic winds hit you face, good thing you prepared for this, you walk inland and see a huge " \
+"mountain in the distance, you start to make your way to the mountain as big as mount everest, " \
+"after hours of hiking you reach the base of the mountain, you see a cave entrance, you brush off " \
+"some snow from a fallen boulder next to it and see a blue gemstone engraved in the rock, you enter " \
+"the cave, its dark and cold, you walk deeper into the cave until you see a peice of meat laying " \
+"on the ground, you are very hungry from your voyage, do you eat the meat?" "\n") 
 
