@@ -1,4 +1,3 @@
-
 print("⚔︎ Treasure Quest ⚔︎\n")
 
 
@@ -243,7 +242,7 @@ def stay_path():
        "look outside your shelter, you see nothing but the night and stars, you go back to sleep, and awake to a beautiful sunny morning, you decide"
        "to explore more of the island, as you walk deeper into the island, you name some of the exotic plants and animals, and jot them down in your"
        "journal, after a few hours of exploring you reach a beautiful waterfall, and the stream flowing from it, you drink some out of the stream and"
-       "feel refreshed, you see a cave entrance behind the waterfall, do you enter the cave, or rest by the waterfall.")
+       "feel refreshed, you see a cave entrance behind the waterfall, do you enter the cave or rest by the waterfall.")
 
 def choice_path5():
        if choice == "22":
@@ -267,6 +266,15 @@ def choice_path6():
               print("Invalid choice. Please try again.")
               choice_path6()
 
+def rest_path():
+       print("Exhausted from your exploration and haven finnaly a drink of the freshest water in your life, you lay down in a bed of flowers and gase up"
+             " into the beautiful sky, full of colorful birds soaring through the air, you close your eyes, and fall asleep, you are awakend by a loud"
+             " bird-like sound behind you, you turn around and see a huge bird in front of you, in its beak is your backpack! You try to snatch it from,"
+             " its beak, but it flys off, you quickly run after it, it leads you into uncharted territory you've never discovered, you keep running"
+             " but then, you feel yourself trip, before you can catch yourself, you fall off a very tall slope, you hit the ground with a hard and"
+             "brutal thud.")
+       print("You have failed you quest.")
+       choice_path6()
 
 def cave_path():
        print("You are have heard stories of hidden treasures in caves behind waterfalls, so you decide to enter the cave, as you step inside bats"
@@ -278,19 +286,18 @@ def choice_path7():
        choice = input("26. Hammer\n"
                       "27. Chisel\n"
                       "28. Pickaxe\n")
-
+       
+if choice == "28":
+       print("You use the pickaxe to try and break the crystal, you strike it a little too hard, the crystal breaks in half, and so does the map"
+         "inside, you are left with nothing but shattered glass and torn paper.")
+print("You have failed your quest.\n")
+choice_path7()
 
 if choice == "26":
        print("You use the hammer to try and break the crystal, you strike it with all your might, the crystal shatters into a million pieces, the" 
        "shards fly everywhere, one sharp shard stabs you in the chest, you fall to the ground, helpless, as you die of loss of blood.")
        print("You have failed your quest.\n")
        choice_path6()
-
-if choice == "28":
-       print("You use the pickaxe to try and break the crystal, you strike it a little too hard, the crystal breaks in half, and so does the map"
-         "inside, you are left with nothing but shattered glass and torn paper.")
-print("You have failed your quest.\n")
-choice_path7()
 
 if choice == "27":
        print("You carefully use the chisel to break the crystal, after a few hours of careful work, you manage to break the crystal without damaging"
@@ -349,34 +356,31 @@ def right_path():
 print("Congratulations! You have found the Treasure of Spring!\n")
 print("Would you like to go to the final direction?")
 
+choice = input( " 33. Yes" 
+                " 34  No")
+
+import sys
 def choice_path10():
-  choice = input("33. Yes\n"
-                 "34. No\n\n")
+   if choice ==  "33":
+    return west_scene()
+   if choice == "34":
+      print("Really? After all this work you dont want to finish your quest? Oh well, home you go.")
+      print("You have failed your quest.\n")
+      sys.exit()
 
-if choice == "33":
-       west_scene()
+   else:
+          print("Invalid choice. Please try again.")         
+     
 
-       
-if choice == "34":
-       print("Really? After all this work you dont want to finish your quest? Oh well, home you go.")
-       print("You have failed your quest.\n")
-       sys.exit()
-       
-              
-else:
-       print("Invalid choice. Please try again.")
-       choice_path10()
-
-
-def west_scene():
-       print("You decide that your final adventure will be the western island (Or whatever the user ends on), located directly west of your home," 
-       " after a few days of sailing you reach the island, you dock your ship and step onto the sandy desert, you see nothing but sand dunes and cacti" 
-       " as far as the eye can see, the sun is blazing hot, you feel thirsty by just looking at the dry desert, you scan the desert for any signs of life," 
-       " you see a rocky formation in the distance, you decide to head towards it, hoping to find some shade from the scorching sun, you make your way" 
-       " towards the rocky formation, When you get there, you see its a large mesa, with a few desert trees and plants, around it, you take shelter" 
-       " underneath one of the trees, you spot a group of arabs riding camels in the distance, you walk towards them, hoping they can help you, they" 
-       " see you and stop their camels, you luckily speak a good amount of their language from your previous travels, you explain your quest to them," 
-       " they say that they can help you but first you must give them something in return, what do you give them?\n")
+def west_scene():      
+ print("You decide that your final adventure will be the western island (Or whatever the user ends on), located directly west of your home," 
+ " after days of sailing you reach the island, you dock your ship and step onto the sandy desert, you see nothing but sand dunes and cacti" 
+ " as far as the eye can see, the sun is blazing hot, you feel thirsty by just looking at the dry desert, you scan the desert for any signs of life," 
+ " you see a rocky formation in the distance, you decide to head towards it, hoping to find some shade from the scorching sun, you make your way" 
+ " towards the rocky formation, When you get there, you see its a large mesa, with a few desert trees and plants, around it, you take shelter" 
+ " underneath one of the trees, you spot a group of arabs riding camels in the distance, you walk towards them, hoping they can help you, they" 
+ " see you and stop their camels, you luckily speak a good amount of their language from your previous travels, you explain your quest to them," 
+ " they say that they can help you but first you must give them something in return, what do you give them?\n")
 
 choice = input("35. Gold from previous treasures\n"
                "36. Your compass\n"
@@ -424,7 +428,7 @@ def desertwell_path():
        print("Suddendly, the temple starts filling with water, you try to break the doors to get out,"
        " but they are too strong and thick, you drown.\n")
        print("You have failed your quest.\n")
-       choice_path11()
+       choice_path12()
 
 def sundial_path():
        print("Suddenly a secret door opens, you enter and are met with a straight path leading directly to another door, you feel suspicous of this, do"
@@ -437,7 +441,7 @@ def choice_path13():
        if choice == "41":
               return dumb_path()
        elif choice == "42":
-                    return smart_path()
+              return smart_path
        else:
               print("Invalid choice. Please try again.\n")
               choice_path13()
@@ -524,6 +528,16 @@ if choice == "47":
 
 if choice == "48":
        sundial_path()
+
+# ~END~  (\_/)
+#        (‘^‘)
+#      (/     |)
+#    O(‘ ‘)(‘ ‘)
+            
+              
+
+       
+
             
 
 
