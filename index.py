@@ -243,7 +243,7 @@ def stay_path():
        "look outside your shelter, you see nothing but the night and stars, you go back to sleep, and awake to a beautiful sunny morning, you decide"
        "to explore more of the island, as you walk deeper into the island, you name some of the exotic plants and animals, and jot them down in your"
        "journal, after a few hours of exploring you reach a beautiful waterfall, and the stream flowing from it, you drink some out of the stream and"
-       "feel refreshed, you see a cave entrance behind the waterfall, do you enter the cave or rest by the waterfall.")
+       "feel refreshed, you see a cave entrance behind the waterfall, do you enter the cave, or rest by the waterfall.")
 
 def choice_path5():
        if choice == "22":
@@ -262,10 +262,11 @@ def choice_path6():
        if choice == "24":
               return cave_path()
        elif choice == "25":
-              return waterfall_path()
+              return rest_path()
        else:
               print("Invalid choice. Please try again.")
               choice_path6()
+
 
 def cave_path():
        print("You are have heard stories of hidden treasures in caves behind waterfalls, so you decide to enter the cave, as you step inside bats"
@@ -277,13 +278,19 @@ def choice_path7():
        choice = input("26. Hammer\n"
                       "27. Chisel\n"
                       "28. Pickaxe\n")
-       return choice
+
 
 if choice == "26":
        print("You use the hammer to try and break the crystal, you strike it with all your might, the crystal shatters into a million pieces, the" 
        "shards fly everywhere, one sharp shard stabs you in the chest, you fall to the ground, helpless, as you die of loss of blood.")
        print("You have failed your quest.\n")
        choice_path6()
+
+if choice == "28":
+       print("You use the pickaxe to try and break the crystal, you strike it a little too hard, the crystal breaks in half, and so does the map"
+         "inside, you are left with nothing but shattered glass and torn paper.")
+print("You have failed your quest.\n")
+choice_path7()
 
 if choice == "27":
        print("You carefully use the chisel to break the crystal, after a few hours of careful work, you manage to break the crystal without damaging"
@@ -344,8 +351,22 @@ print("Would you like to go to the final direction?")
 
 def choice_path10():
   choice = input("33. Yes\n"
-                 "34. No \n\n")
-choice_path10()
+                 "34. No\n\n")
+
+if choice == "33":
+       west_scene()
+
+       
+if choice == "34":
+       print("Really? After all this work you dont want to finish your quest? Oh well, home you go.")
+       print("You have failed your quest.\n")
+       sys.exit()
+       
+              
+else:
+       print("Invalid choice. Please try again.")
+       choice_path10()
+
 
 def west_scene():
        print("You decide that your final adventure will be the western island (Or whatever the user ends on), located directly west of your home," 
@@ -416,7 +437,7 @@ def choice_path13():
        if choice == "41":
               return dumb_path()
        elif choice == "42":
-              return smart_path
+                    return smart_path()
        else:
               print("Invalid choice. Please try again.\n")
               choice_path13()
@@ -504,22 +525,12 @@ if choice == "47":
 if choice == "48":
        sundial_path()
             
-if choice == "33":
-       west_scene()
-elif choice == "34":
-              print("Really? After all this work you dont want to finish your quest? Oh well, home you go.")
-              print("You have failed your quest.\n")
-              choice_path10()         
-else:
-       print("Invalid choice. Please try again.")
-       choice_path10()  
+
 
        
-if choice == "28":
-       print("You use the pickaxe to try and break the crystal, you strike it a little too hard, the crystal breaks in half, and so does the map"
-         "inside, you are left with nothing but shattered glass and torn paper.")
-print("You have failed your quest.\n")
-choice_path7()
+
+       
+
 
 
 
