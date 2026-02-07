@@ -1,13 +1,13 @@
 print("⚔︎ Treasure Quest ⚔︎\n")
 
 
-print("You are a treasure hunter who is on a quest to find hidden treasures left by four ancient kings, its" \
-"been hidden for centeries and no one has been able to find it, but you wont give up! The only clue the ancient kings" \
-"left behind was a stone tablet with different symbols on it, you remember seeing these symbols on your grand mothers" \
-"vase that she never let you touch. One day, while she was out getting groceries to make cookies, you decided to climb" \
-"on top of the counter to get the vase down, you grabbed the vase and carefully climb down, you inpectthe vase and the" \
-"four symbols on it, you look closer at the small writing underneath each symbol, they read: North (Treasure of Winter)," \
-"East(Treasure of autumn), South(Treasure of spring) and west (treasure of summer), these are directions! You put the" \
+print("You are a treasure hunter who is on a quest to find hidden treasures left by four ancient kings, its" 
+"been hidden for centeries and no one has been able to find it, but you wont give up! The only clue the ancient kings" 
+"left behind was a stone tablet with different symbols on it, you remember seeing these symbols on your grand mothers" 
+"vase that she never let you touch. One day, while she was out getting groceries to make cookies, you decided to climb" 
+"on top of the counter to get the vase down, you grabbed the vase and carefully climb down, you inspect the vase and the" 
+"four symbols on it, you look closer at the small writing underneath each symbol, they read: North (Treasure of Winter)," 
+"East(Treasure of autumn), South(Treasure of spring) and west (treasure of summer), these are directions! You put the" 
 "vase back then decide to set out on your quest to find the hidden treasures")
 
 
@@ -47,48 +47,64 @@ print("after hours of hiking you reach the base of the mountain, you see a cave 
 print("some snow from a fallen boulder next to it and see a blue gemstone engraved in the rock, you enter")
 print("the cave, its dark and cold, you walk deeper into the cave until you see a peice of meat laying")
 print("on the ground, you are very hungry from your voyage," "\n")
+
+
 choice = input("Do you eat the meat?\n"
                "5. Eat the meat\n"
-               "6. Move on into the cave\n")   
+               "6. Move on into the cave\n")
 
-if choice == "5":
+def choice_path0():
+       if choice == "5":
+              return meat_scene()
+       elif choice == "6":
+              return ignore_scene()
+       else:
+              return choice_path0
+  
+def meat_scene():
         print("You go to pick up the meat, as you do a huge polar bear jumps out from the shadows and attacks you, you try")
         print("to fight it off but it overpowers you.\n")
         print("You have failed your quest.")
-        north_scene()
+        choice_path0()
         
 
-if choice == "6":
+def ignore_scene():
         print("You ignore the meat and walk deeper into the cave, after a few minutes you see a light in the distance, you")
         print("walk towards it and find a large chamber with the floor frozen over, you see a large ice pedestal in the center")
         print("of the chamber with a chest on top of it, should you cross the frozen floor to get to the chest? Or look around")
         print("the chamber first?")
 
-else:
-        print("Invalid choice. Please try again.")
-        north_scene()
-
 choice = input("7. Cross the frozen floor to the chest\n"
                "8. Look around the chamber first\n")
 
-if choice == "7":
+def choice_path1():
+       if choice == "7":
+              return frozenfloor_scene()
+       elif choice == "8":
+              return Lookaround_scene()
+       else:
+         print("Invalid choice. Please try again.")
+         choice_path0()
+
+def frozenfloor_scene():
         print("You make your way across the frozen floor, as you near the pedestal you hear a cracking sound, before you can")
         print("react the ice breaks beneath you, and you fall into freezing water below, the freezing temperature of the water")
         print("gives you hypothermia and you drown.\n")
-        print("You have failed your quest.")
-        north_scene()
+        print("You have failed your quest.\n")
+        choice_path1()
 
-if choice == "8":
+def Lookaround_scene():
       print("You observe the ice closely and see that the floor is very thin in some spots, you carefully make your way across")
       print("the chamber avoiding the thin ice, you reach the pedestal and open the chest, inside you find gold, diamonds,")
       print("a sheild, and a Blue gemstone!\n")
       print("Congratulations! You have found the Treasure of Winter!\n")
 
-choose_direction2 = input("What direction should you like to go to next?")
-print("9. East  (Treasure of Autumn)") 
-print("10. South (Treasure of Spring)") 
-print("11. West  (Treasure of Summer)\n") 
 
+choose_direction2 = input("What direction should you like to go to next?" 
+                          "9. East  (Treasure of Autumn)" 
+                          "10. South (Treasure of Spring)" 
+                          "11. West  (Treasure of Summer)\n")
+   
 def choose_direction2():
         if choose_direction2 == "9":
                print("You set sail to the East!\n")
@@ -121,8 +137,7 @@ def choice_path4():
         choice = input("14. Help the fox" \
                        "15. Ignore the fox" \
                        "16. Take its fur for profit\n")
-        
-        
+          
 if choice == "14":
         print("You carefully approach the injured fox, it looks at you with pleading eyes, you reach into you bag to find some")
         print("bandages and medicine, luckily you packed extra supplies for your journey, you carefully bandage the fox's wounds")
