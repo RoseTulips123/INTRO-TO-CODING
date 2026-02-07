@@ -65,7 +65,7 @@ def meat_scene():
         print("You go to pick up the meat, as you do a huge polar bear jumps out from the shadows and attacks you, you try")
         print("to fight it off but it overpowers you.\n")
         print("You have failed your quest.")
-        choice_path0()
+        return choice_path0()
         
 
 def ignore_scene():
