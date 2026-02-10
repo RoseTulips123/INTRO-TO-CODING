@@ -1,3 +1,6 @@
+
+inventory = []
+
 print("⚔︎ Treasure Quest ⚔︎\n")
 
 
@@ -98,6 +101,7 @@ def Lookaround_scene():
       print("the chamber avoiding the thin ice, you reach the pedestal and open the chest, inside you find gold, diamonds,")
       print("a sheild, and a Blue gemstone!\n")
       print("Congratulations! You have found the Treasure of Winter!\n")
+      inventory.append("Sheild", "Blue gemstone")
 
 
 choose_direction2 = input("What direction should you like to go to next?" 
@@ -146,7 +150,9 @@ if choice == "14":
         print("the forest, you decide to follow the map, after a few hours of searching you reach the spot marked on the map, you")
         print("finnaly find the spot, you start digging and find a chest buried in the ground, you open the chest and find gold, jewels,")
         print("a cape, and a yellow gemstone!\n")
+        inventory.append("Cape", "Yellow gemstone")
         print("Congratulations! You have found the Treasure of Autumn!\n")
+        
 
 def choice_path3():
   if choice == "12":
@@ -196,6 +202,7 @@ def communication_path():
              "a few hours of searching you reach the spot marked on the map, you start digging and find a chest buried in the"
              "ground, inside you find gold, jewels, a cape, and a red gemstone!")
        print("Congratulations! You have found the Treasure of Autumn!\n")
+       inventory.append("Cape", "Yellow gemstone")
        print("What direction should you go to next?")
        direction_path3()
 
@@ -215,6 +222,7 @@ def gift_path():
              "you follow the map and after a few hours of searching you reach the spot marked on the map, you start digging and\n"
              "find a chest buried in the ground, inside you find gold, jewels, a cape, and a red gemstone!\n")
        print("Congratulations! You have found the Treasure of Autumn!\n")
+       inventory.append("Cape", "Yellow gemstone")
        print("What direction should you go to next?")
        direction_path3()
 
@@ -225,7 +233,8 @@ def direction_path3():
        if direction == "20":
               print("You set sail to the South!\n")
               return south_scene()
-       elif direction == "21":          
+       elif direction == "21": 
+                print ("You sail to the West!")         
                 return west_scene()
        else:
                 print("Invalid choice. Please try again.")
@@ -367,6 +376,7 @@ def right_path():
        print("You take the right path, the tunnel is long and narrow, after awhile, you hear echos of flowing water ahead, you walk faster and soon reach"
               " a large underground waterfall, with a sparkling pool below, you see a chest at the base of the waterfall, you swim to the chest and open it,"
               " inside you find gold, jewels, armor, and a pink gemstone!\n")
+       inventory.append("Armor", "Pink gemstone")
        
 print("Congratulations! You have found the Treasure of Spring!\n")
 print("Would you like to go to the final direction?")
@@ -502,6 +512,7 @@ def egg_path():
 def yolk_path():
       print("Suddenly the wall behind the stone opens, revealing a treasure chest placed on a mount of gold and gems! Inside you see gold, gems a"
             " sword and the red gemstone!\n")
+      inventory.append("Sword", "Red gemstone")
       print("Congratulations! You found all 4 gemstone and a full set of armor! You have completed you quest.\n \n")
 
 
