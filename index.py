@@ -2,8 +2,7 @@
 inventory = []
 
 def intro():
-    print("                                       ⚔︎ Treasure Quest ⚔︎\n")
-
+    print("⚔︎ Treasure Quest ⚔︎\n")
     print("You are a treasure hunter who is on a quest to find hidden treasures left by four ancient kings, its" 
 "been hidden for centeries and no one has been able to find it, but you wont give up! The only clue the ancient kings" 
 "left behind was a stone tablet with different symbols on it, you remember seeing these symbols on your grand mothers" 
@@ -11,8 +10,7 @@ def intro():
 "on top of the counter to get the vase down, you grabbed the vase and carefully climb down, you inspect the vase and the" 
 "four symbols on it, you look closer at the small writing underneath each symbol, they read: North (Treasure of Winter)," 
 "East(Treasure of autumn), South(Treasure of spring) and west (treasure of summer), these are directions! You put the" 
-"vase back then decide to set out on your quest to find the hidden treasures")
-
+"vase back then decide to set out on your quest to find the hidden treasures\n")
 print("\nType in the number to the choice you want to make.\n")
 
 chosen_direction = input("What direction should you go first?\n"
@@ -31,8 +29,7 @@ elif chosen_direction == "4":
                 print("You set sail to the West!\n")
 else:
   print("Invalid choice. Please try again.")
-  chosen_direction()
- 
+chosen_direction
 
 def north_scene():
        print("after days of sailing you reach an island directly North of your home, you dock your ship,")
@@ -43,30 +40,27 @@ print("some snow from a fallen boulder next to it and see a blue gemstone engrav
 print("the cave, its dark and cold, you walk deeper into the cave until you see a peice of meat laying")
 print("on the ground, you are very hungry from your voyage," "\n")
 
-choice = input("Do you eat the meat?\n"
+choice0 = input("Do you eat the meat?\n"
                "5. Eat the meat\n"
                "6. Move on into the cave\n")
-
-def choice_path0():
-       if choice == "5":
-              return meat_scene()
-       elif choice == "6":
-              return ignore_scene()
-       else:
-              return choice_path0
-  
+       
 def meat_scene():
         print("You go to pick up the meat, as you do a huge polar bear jumps out from the shadows and attacks you, you try")
         print("to fight it off but it overpowers you.\n")
         print("You have failed your quest.")
         return north_scene()
-        
 
+if choice0 == "5":
+       meat_scene
+ 
 def ignore_scene():
         print("You ignore the meat and walk deeper into the cave, after a few minutes you see a light in the distance, you")
         print("walk towards it and find a large chamber with the floor frozen over, you see a large ice pedestal in the center")
         print("of the chamber with a chest on top of it, should you cross the frozen floor to get to the chest? Or look around")
         print("the chamber first?")
+
+if choice0 == "6":
+       ignore_scene
 
 choice = input("7. Cross the frozen floor to the chest\n"
                "8. Look around the chamber first\n")
@@ -78,7 +72,7 @@ def choice_path1():
               return Lookaround_scene()
        else:
          print("Invalid choice. Please try again.")
-         choice_path0()
+         choice_path1()
 
 def frozenfloor_scene():
         print("You make your way across the frozen floor, as you near the pedestal you hear a cracking sound, before you can")
