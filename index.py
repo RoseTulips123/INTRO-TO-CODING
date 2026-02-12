@@ -1,10 +1,10 @@
 
 inventory = []
 
-print("⚔︎ Treasure Quest ⚔︎\n")
+def intro():
+    print("                                       ⚔︎ Treasure Quest ⚔︎\n")
 
-
-print("You are a treasure hunter who is on a quest to find hidden treasures left by four ancient kings, its" 
+    print("You are a treasure hunter who is on a quest to find hidden treasures left by four ancient kings, its" 
 "been hidden for centeries and no one has been able to find it, but you wont give up! The only clue the ancient kings" 
 "left behind was a stone tablet with different symbols on it, you remember seeing these symbols on your grand mothers" 
 "vase that she never let you touch. One day, while she was out getting groceries to make cookies, you decided to climb" 
@@ -12,8 +12,6 @@ print("You are a treasure hunter who is on a quest to find hidden treasures left
 "four symbols on it, you look closer at the small writing underneath each symbol, they read: North (Treasure of Winter)," 
 "East(Treasure of autumn), South(Treasure of spring) and west (treasure of summer), these are directions! You put the" 
 "vase back then decide to set out on your quest to find the hidden treasures")
-
-
 
 print("\nType in the number to the choice you want to make.\n")
 
@@ -23,34 +21,27 @@ chosen_direction = input("What direction should you go first?\n"
                          "3. South (Treasure of Spring)\n"
                          "4. West  (Treasure of Summer)\n")
 
-
-
-def choose_direction():
-        if chosen_direction == "1":
+if chosen_direction == "1":
                print("You set sail to the North!\n")
-               return north_scene()
-        elif chosen_direction == "2":
-                print("You set sail to the East!\n")
-                return east_scene()
-        elif chosen_direction == "3":
+if chosen_direction == "2":
+               print("You set sail to the East!\n")
+elif chosen_direction == "3":
                 print("You set sail to the South!\n")
-                return south_scene()
-        elif chosen_direction == "4":
+elif chosen_direction == "4":
                 print("You set sail to the West!\n")
-                return west_scene()
-        else:
-                print("Invalid choice. Please try again.")
-                choose_direction()
-    
-def north_scene():    
-   print("after days of sailing you reach an island directly North of your home, you dock your ship,")
+else:
+  print("Invalid choice. Please try again.")
+  chosen_direction()
+ 
+
+def north_scene():
+       print("after days of sailing you reach an island directly North of your home, you dock your ship,")
 print("cold, arctic winds hit you face, good thing you prepared for this, you walk inland and see a huge")
 print("mountain in the distance, you start to make your way to the mountain as big as mount everest,")
 print("after hours of hiking you reach the base of the mountain, you see a cave entrance, you brush off")
 print("some snow from a fallen boulder next to it and see a blue gemstone engraved in the rock, you enter")
 print("the cave, its dark and cold, you walk deeper into the cave until you see a peice of meat laying")
 print("on the ground, you are very hungry from your voyage," "\n")
-
 
 choice = input("Do you eat the meat?\n"
                "5. Eat the meat\n"
@@ -68,7 +59,7 @@ def meat_scene():
         print("You go to pick up the meat, as you do a huge polar bear jumps out from the shadows and attacks you, you try")
         print("to fight it off but it overpowers you.\n")
         print("You have failed your quest.")
-        return choice_path0()
+        return north_scene()
         
 
 def ignore_scene():
@@ -103,34 +94,32 @@ def Lookaround_scene():
       print("Congratulations! You have found the Treasure of Winter!\n")
       inventory.append("Sheild", "Blue gemstone")
 
+north_scene
 
 choose_direction2 = input("What direction should you like to go to next?" 
                           "9. East  (Treasure of Autumn)" 
                           "10. South (Treasure of Spring)" 
                           "11. West  (Treasure of Summer)\n")
    
-def choose_direction2():
-        if choose_direction2 == "9":
-               print("You set sail to the East!\n")
-               return east_scene()
-        elif choose_direction2 == "10":
+if choose_direction2 == "9":
+       print("You set sail to the East!\n")
+elif choose_direction2 == "10":
                 print("You set sail to the South!\n")
-                return south_scene()
-        elif choose_direction2 == "11":
+elif choose_direction2 == "11":
                 print("You set sail to the West!\n")
-                return west_scene()
-        else:
-                print("Invalid choice. Please try again.")
-                choose_direction2()
-
+          
+else:
+   print("Invalid choice. Please try again.")
+choose_direction2()
+    
 def east_scene():
        print("Upon arriving at the island directly East of your home, you immediately see beautiful mountainous terrain") 
        print("and colorful trees, you see two paths ahead of you, one leading into a beautiful forest, and one leading")
        print("towards a treehouse village built into the mountainside, which path do you take?\n") 
 
-choice = input("Which path do you take?\n")
-print("12. Enter the forest")
-print("13. Head towards the treehouse village\n")
+choice_path3 = input("Which path do you take?\n"
+                     "12. Beautiful forest\n"
+                     "13 Treehouse village\n")
 
 def forest_path():  
         print("You enter the forest, the trees are tall and the leaves are a beautiful array of reds, oranges, and yellows, as you")
@@ -152,17 +141,6 @@ if choice == "14":
         print("a cape, and a yellow gemstone!\n")
         inventory.append("Cape", "Yellow gemstone")
         print("Congratulations! You have found the Treasure of Autumn!\n")
-        
-
-def choice_path3():
-  if choice == "12":
-       forest_path()       
-  elif choice == "13":
-       treehouse_path()       
-  else:
-      print("Invalid choice. Please try again.\n")
-      choice_path3()     
-
 
 if choice == "15":
        print("You decide to ignore the fox and continue on your way, as you walk deeper into the forest, suddenly an tribe of")
@@ -177,7 +155,6 @@ if choice == "16":
         print("could run, it crushes you.\n")
         print("You have failed your quest.\n")
         choice_path4()
-
 
 def treehouse_path():  
        print("You decide that going to the treehouse village might have a better chance of finding the treasure, you make your")
@@ -225,6 +202,16 @@ def gift_path():
        inventory.append("Cape", "Yellow gemstone")
        print("What direction should you go to next?")
        direction_path3()
+
+if choice == "12":
+       forest_path()       
+elif choice == "13":
+       treehouse_path()       
+else:
+      print("Invalid choice. Please try again.\n")
+      choice_path3()     
+
+east_scene
 
 def direction_path3():
        direction = input("20. South (Treasure of Spring)\n"
@@ -377,7 +364,9 @@ def right_path():
               " a large underground waterfall, with a sparkling pool below, you see a chest at the base of the waterfall, you swim to the chest and open it,"
               " inside you find gold, jewels, armor, and a pink gemstone!\n")
        inventory.append("Armor", "Pink gemstone")
-       
+
+south_scene      
+
 print("Congratulations! You have found the Treasure of Spring!\n")
 print("Would you like to go to the final direction?")
 
@@ -396,7 +385,6 @@ def choice_path10():
    else:
           print("Invalid choice. Please try again.")         
      
-
 def west_scene():      
  print("You decide that your final adventure will be the western island (Or whatever the user ends on), located directly west of your home," 
  " after days of sailing you reach the island, you dock your ship and step onto the sandy desert, you see nothing but sand dunes and cacti" 
@@ -498,6 +486,7 @@ def choice_path14():
               return yolk_path()
        else:
               print("Invalid choice. Please try again.\n")
+              choice_path14
        
 def shell_path():
        print("Suddenly treasure chests starts falling from above and crush you\n")
